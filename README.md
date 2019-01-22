@@ -9,21 +9,17 @@ centos7以上系统初始化：selinux ntp firewall配置等
 - firewall增加80 22 3306 443 端口
 - 更换源为阿里云yum源
 - 增加回收站找回，屏蔽了危险操作rm -rf ,想删除只能使用rm +文件名称
+
 # 安装方法
-
-yum install -y wget git
-
+-首先 yum install -y wget git
 - 进入如下目录
-
 - cd /opt
 - git clone https://github.com/cncentoscn/Initialize.git
 
 - 安装
 - cd Initialize/
 - ./www.centoscn.vip.sh 
-
 - 看到如下提示说明安装成功
-
 - success
 - success
 - success
@@ -47,10 +43,12 @@ rm anaconda-ks.cfg
 - 总用量 4
 - -rw-------. 1 root root 1487 1月  16 01:05 anaconda-ks.cfg
 - [root@nginx-1 ~]# cat anaconda-ks.cfg 
-- #version=DEVEL
-- # System authorization information
+- version=DEVEL
+-  System authorization information
 - auth --enableshadow --passalgo=sha512
-- # Use CDROM installation media
+-  Use CDROM installation media
 
 - 有了回收站功能，再也不用担心乱删东西了。不过回收后到目录不要轻易让别人知道。
+- 查看已有防火墙规则
+- firewall-cmd --list-all
 - 更多内容请关注 www.centoscn.vip
