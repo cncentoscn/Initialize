@@ -1,4 +1,4 @@
-# Initialize
+# Initialize 请在系统没有安装任何软件之前执行
 centos7以上系统初始化：selinux ntp firewall配置等
 
 # 主要做了一些如下操作
