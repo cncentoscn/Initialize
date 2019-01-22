@@ -1,8 +1,7 @@
 # Initialize 请在系统没有安装任何软件之前执行
-centos7以上系统初始化：selinux ntp firewall配置等
+centos7以上系统初始化：selinux 时间自动更新 firewall 回收站找回功能 字符集
 
 # 主要做了一些如下操作
-
 - 关闭selinux
 - yum基础插件 vim  gcc  openssl gcc-c++ epel-release  chrony zip unzip  lrzsz  openssl-devel
 - 字符集UTF8   zh_CN.UTF-8
