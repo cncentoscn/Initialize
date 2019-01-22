@@ -33,6 +33,8 @@ firewall-cmd --zone=public --add-port=22/tcp --permanent
 firewall-cmd --zone=public --add-port=3306/tcp --permanent
 firewall-cmd --zone=public --add-port=443/tcp --permanent
 firewall-cmd --reload
-
-
-
+#回收站
+rm -rf  /root/.bashrc
+mv /opt/.bashrc  /root/
+mkdir -p /root/.trash
+source ~/.bashrc
