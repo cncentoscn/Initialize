@@ -12,7 +12,7 @@ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-
 
 echo "安装基本依赖"
 {
-yum install wget vim  gcc  openssl gcc-c++ epel-release  chrony zip unzip  lrzsz  openssl-devel  -y
+yum install vim  gcc  openssl gcc-c++ epel-release  chrony zip unzip  lrzsz  openssl-devel  -y
 } || {
 echo "yum出错，请更换源重新运行"
 exit 1
