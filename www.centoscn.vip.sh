@@ -37,5 +37,4 @@ firewall-cmd --reload
 rm -rf  /root/.bashrc
 mv /opt/Initialize/.bashrc  /root/
 mkdir -p /root/.trash
-cd /root
-source .bashrc
+rm -rf /opt/Initialize
